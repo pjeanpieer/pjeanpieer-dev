@@ -1,28 +1,30 @@
 <h1>Skills</h1>
 
-<%= image_tag("html5-logo.png", width:"50px") %>
-<p>HTLM5</p>
-<%= image_tag("css3-logo.png", width:"50px") %>
-<p>CSS3</p>
-<%= image_tag("javascript-logo.png", width:"50px") %>
-<p>Javascript</p>
-<%= image_tag("react-logo.webp", width:"50px") %>
-<p>React</p>
-<%= image_tag("python-logo.png", width:"50px") %>
-<p>Python</p>
-<%= image_tag("bootstrap-logo.png", width:"50px") %>
-<p>Bootstrap</p>
-<%= image_tag("figma-logo.png", width:"50px") %>
-<p>Figma</p>
-<%= image_tag("heroku-logo.webp", width:"50px") %>
-<p>Heroku</p>
-<%= image_tag("postgresql-logo.png", width:"50px") %>
-<p>Postgresql</p>
-<%= image_tag("ruby-on-rails-logo.png", width:"50px") %>
-<p>Rails</p>
-<%= image_tag("sass-logo.png", width:"50px") %>
-<p>Sass</p>
-<%= image_tag("docker-logo.png", width:"50px") %>
-<p>Docker</p>
-<%= image_tag("github-logo.png", width:"50px") %>
-<p>Github</p>
+<% technologies = [
+     { name: "HTML5", image: "html5-logo.png", size: "50px" },
+     { name: "CSS3", image: "css3-logo.png", size: "50px" },
+     { name: "Javascript", image: "javascript-logo.png", size: "50px" },
+     { name: "React", image: "react-logo.webp", size: "50px" },
+     { name: "Python", image: "python-logo.png", size: "50px" },
+     { name: "Bootstrap", image: "bootstrap-logo.png", size: "50px" },
+     { name: "Figma", image: "figma-logo.png", size: "50px" },
+     { name: "Heroku", image: "heroku-logo.webp", size: "50px" },
+     { name: "Postgresql", image: "postgresql-logo.png", size: "50px" },
+     { name: "Rails", image: "ruby-on-rails-logo.png", size: "50px" },
+     { name: "Sass", image: "sass-logo.png", size: "50px" },
+     { name: "Docker", image: "docker-logo.png", size: "50px" },
+     { name: "Github", image: "github-logo.png", size: "50px" }
+   ]
+%>
+
+<div class="row">
+  <% technologies.each_with_index do |technology, index| %>
+    <div class="col-md-2">
+      <%= image_tag(technology[:image], width: technology[:size]) %>
+      <p><%= technology[:name] %></p>
+    </div>
+    <% if (index + 1) % 6 == 0 %>
+      </div><div class="row">
+    <% end %>
+  <% end %>
+</div>

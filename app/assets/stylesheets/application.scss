@@ -10,3 +10,16 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+.con-margen {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+@media (max-width: 576px) {
+  .con-margen {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
