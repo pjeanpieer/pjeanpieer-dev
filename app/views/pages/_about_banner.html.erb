@@ -1,16 +1,18 @@
 <div class="container">
   <div class="row">
 
-    <div class="col-12 col-lg-4">
+    <div class="col-12 col-lg-4 text-center align-self-center">
       <%= image_tag("dev-icon.png", class: "center-dev") %>
     </div>
 
     <div class="col-12 col-lg-8">
-      <h2>About me</h2>
+      <h2 style="margin-bottom: 5%;"><strong>About me</strong></h2>
       <p>Developer with background in Business Administration, professional with solid knowledge of programming languages and frameworks.</p>
       <p>Exceptional proficiency in creating optimal algorithms, ability to solve complex problems and debug code, with passion and motivation for web development and building high-quality digital solutions.</p>
       <p>Organized, committed, and perseverant are three adjectives that describe me well.</p>
-      <div class="btn btn-success"><%= link_to "Download Resume", download_cv_path, style: "text-decoration: none; color: white; justify-content; center:" %></div>
+      <div class="my-button">
+        <strong><%= link_to "Download Resume", download_cv_path %></strong>
+      </div>
     </div>
 
   </div>

@@ -1,20 +1,15 @@
 // Specific CSS for your home-page
 
-.avatar {
-  width: 320px;
-  height: 320px;
-  border-radius: 50%;
-  border: #D9D9D9 18px solid;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.center-dev {
-  height: 200px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.rectangle {
+  width: 70px;
+  height: 35px;
+  background-color: #D9D9D9;
+  border-radius: 15px 15px 15px 0;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3%;
 }
 
 .center {
@@ -47,14 +42,59 @@
   background-color: #D9D9D9;
 }
 
-.rectangle {
-  width: 70px;
-  height: 35px;
+.avatar {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  border: #D9D9D9 18px solid;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-button {
   background-color: #D9D9D9;
-  border-radius: 15px 15px 15px 0;
-  padding: 10px;
-  font-size: 14px;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 15px 15px 15px 15px;
   text-align: center;
-  line-height: normal;
-  margin-bottom: 3%;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out; /* Agrega esta propiedad para suavizar la transición */
+}
+
+.my-button:hover {
+  background-color: #6BF178;
+}
+
+.my-button a {
+  text-decoration: none;
+  color:#333;
+}
+
+.my-button:hover a {
+  color: white;
+}
+
+.btn-cv {
+  width: 150px;
+  height: 40px;
+  background-color: #D9D9D9;
+  border-radius: 15px 15px 15px 15px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.center-dev {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 55%;
+  height: auto;
 }
