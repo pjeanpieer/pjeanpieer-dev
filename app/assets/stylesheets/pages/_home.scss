@@ -150,3 +150,27 @@
 .links a:hover {
   border-bottom-color: #6BF178; /* Cambia el color del borde inferior a #333 cuando el cursor está sobre el botón */
 }
+
+.skills-row {
+  margin: 0 -5px; /* establecer el margen izquierdo y derecho en negativo */
+}
+
+.technology {
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80%;
+}
+
+.technology p {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+
+.technology img {
+  max-height: 50%;
+  max-width: 50%;
+}

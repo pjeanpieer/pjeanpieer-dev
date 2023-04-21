@@ -1,30 +1,33 @@
-<h1>Skills</h1>
 
 <% technologies = [
-     { name: "HTML5", image: "html5-logo.png", size: "50px" },
-     { name: "CSS3", image: "css3-logo.png", size: "50px" },
-     { name: "Javascript", image: "javascript-logo.png", size: "50px" },
-     { name: "React", image: "react-logo.webp", size: "50px" },
-     { name: "Python", image: "python-logo.png", size: "50px" },
-     { name: "Bootstrap", image: "bootstrap-logo.png", size: "50px" },
-     { name: "Figma", image: "figma-logo.png", size: "50px" },
-     { name: "Heroku", image: "heroku-logo.webp", size: "50px" },
-     { name: "Postgresql", image: "postgresql-logo.png", size: "50px" },
-     { name: "Rails", image: "ruby-on-rails-logo.png", size: "50px" },
-     { name: "Sass", image: "sass-logo.png", size: "50px" },
-     { name: "Docker", image: "docker-logo.png", size: "50px" },
-     { name: "Github", image: "github-logo.png", size: "50px" }
+     { name: "HTML5", image: "html5-logo.png"},
+     { name: "CSS3", image: "css3-logo.png"},
+     { name: "Javascript", image: "javascript-logo.png"},
+     { name: "React", image: "react-logo.webp"},
+     { name: "Angular", image: "angular-logo.png"},
+     { name: "Python", image: "python-logo.png"},
+     { name: "Bootstrap", image: "bootstrap-logo.png"},
+     { name: "Heroku", image: "heroku-logo.webp"},
+     { name: "Postgresql", image: "postgresql-logo.png"},
+     { name: "Rails", image: "ruby-on-rails-logo.png"},
+     { name: "Sass", image: "sass-logo.png"},
+     { name: "Docker", image: "docker-logo.png"},
+     { name: "Github", image: "github-logo.png"},
+     { name: "Figma", image: "figma-logo.png"},
    ]
 %>
 
-<div class="row">
-  <% technologies.each_with_index do |technology, index| %>
-    <div class="col-md-2">
-      <%= image_tag(technology[:image], width: technology[:size]) %>
-      <p><%= technology[:name] %></p>
-    </div>
-    <% if (index + 1) % 6 == 0 %>
-      </div><div class="row">
+
+<div class="container">
+  <h2><strong>Skills</strong></h2>
+  <div class="row gap-2 mt-5 justify-content-center">
+    <% technologies.each do |technology| %>
+      <div class="col-sm-3 col-md-2 px-0">
+        <div class="technology">
+          <%= image_tag(technology[:image], class: 'h-100') %>
+          <p><%= technology[:name] %></p>
+        </div>
+      </div>
     <% end %>
-  <% end %>
+  </div>
 </div>
