@@ -194,3 +194,39 @@
   font-size: 12px;
   margin: 0; /* elimina el margen predeterminado del párrafo dentro del footer */
 }
+
+.banner-contact {
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+}
+
+.banner-contact h2 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  margin-bottom: 2%;
+  opacity: .7;
+}
+
+.banner-contact p {
+  color: #ffffff;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  margin-bottom: 0;
+}
+
+.banner-contact {
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  z-index: 1;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
+
+.banner-email {
+  background-size: cover;
+  background-position: center;
+  padding: 80px;
+}
