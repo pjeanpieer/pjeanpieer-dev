@@ -183,3 +183,14 @@
 .email:hover {
   color: #6BF178;
 }
+
+.footer-align {
+  text-align: right;
+  background-color: #D9D9D9; /* establece el color de fondo del footer */
+  padding: 10px; /* agrega un relleno alrededor del contenido del footer */
+}
+
+.footer-align p {
+  font-size: 12px;
+  margin: 0; /* elimina el margen predeterminado del párrafo dentro del footer */
+}
