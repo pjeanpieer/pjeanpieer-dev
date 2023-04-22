@@ -15,6 +15,22 @@
       skill: ['HTML', 'CSS', 'Javascript', 'Ruby on Rails', 'Github'],
       url: "https://musicbooking.herokuapp.com/",
       code: "https://github.com/abValle/music-booking"
+      },
+      {
+      title: "RentGames!",
+      image: "rent-games.png",
+      description: "Site that connects board game lovers who want to play new and exciting games without spending a fortune",
+      skill: ['HTML', 'CSS', 'Javascript', 'Ruby on Rails', 'Github'],
+      url: "https://rent-games.herokuapp.com/",
+      code: "https://github.com/hurikzamith/rent-games"
+      },
+      {
+      title: "Music Booking",
+      image: "music-booking.png",
+      description: "A browser that is able to connect companies seeking musicians or artists with those who want to work",
+      skill: ['HTML', 'CSS', 'Javascript', 'Ruby on Rails', 'Github'],
+      url: "https://musicbooking.herokuapp.com/",
+      code: "https://github.com/abValle/music-booking"
       }
    ]
 %>
@@ -22,7 +38,7 @@
 <div class="container"> <h2><strong>Portfolio</strong></h2>
   <div class="row">
     <% projects.each_with_index do |project, index| %>
-      <div class="col">
+      <div class="col-sm-5 col-md-4 mb-3">
         <div class="card">
           <%= image_tag(project[:image]) %>
           <div class="card-body d-flex flex-column">
