@@ -1,6 +1,11 @@
 // Specific CSS for your home-page
 
-.rectangle {
+.center {
+  margin: auto;
+  width: 50%;
+}
+
+.header-box {
   width: 70px;
   height: 35px;
   background-color: #D9D9D9;
@@ -12,10 +17,6 @@
   margin-bottom: 3%;
 }
 
-.center {
-  margin: auto;
-  width: 50%;
-}
 
 .social-links {
   display: flex;
@@ -79,17 +80,6 @@
   color: white;
 }
 
-.btn-cv {
-  width: 150px;
-  height: 40px;
-  background-color: #D9D9D9;
-  border-radius: 15px 15px 15px 15px;
-  font-size: 14px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 5%;
-}
 
 .center-dev {
   display: block;
