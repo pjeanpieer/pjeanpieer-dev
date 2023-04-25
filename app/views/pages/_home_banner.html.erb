@@ -1,5 +1,5 @@
 
-<% my_social_links = [
+<% my_social_medias = [
     {
       name: "LinkedIn",
       url: "https://www.linkedin.com/in/pjeanpieer",
@@ -23,19 +23,19 @@
   ]
 %>
 
-<div class="container">
+<div class="container-fluid">
   <div class="row">
-    <div class="col horizontal-center d-flex flex-column align-items-start">
+    <div class="col horizontal-center">
       <div class="header-box">
         <strong>Hi, It's</strong>
       </div>
-      <div>
+      <div class="info-name">
         <h1 style="margin-bottom: 0px;"><strong>Jean Pieer</strong></h1>
         <h4 style="margin-bottom: 0px;">Full - Stack Developer</h4>
       </div>
       <div class="all-social">
-        <% my_social_links.each do |link| %>
-          <a class="one-social-link" href="<%= link[:url] %>" target="_blank">
+        <% my_social_medias.each do |link| %>
+          <a class="one-social-media" href="<%= link[:url] %>" target="_blank">
             <span class="circle">
               <i class="<%= link[:icon_class] %>"></i>
             </span>

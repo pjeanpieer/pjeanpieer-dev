@@ -1,8 +1,12 @@
 // Specific CSS for your home-page
 
+
 .horizontal-center {
   margin: auto;
   width: 50%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
 }
 
 .header-box {
@@ -23,12 +27,12 @@
   margin-top: 3%;
 }
 
-.one-social-link {
+.one-social-media {
   text-decoration: none;
   color: inherit;
 }
 
-.one-social-link i {
+.one-social-media i {
   color: #333;
 }
 
@@ -43,10 +47,11 @@
 }
 
 .avatar {
-  width: 320px;
-  height: 320px;
+  width: 80%;
+  max-width: 320px;
+  height: auto;
   border-radius: 50%;
-  border: #D9D9D9 18px solid;
+  border: #D9D9D9 18px solid ;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -219,3 +224,4 @@
   background-position: center;
   padding: 80px;
 }
+
