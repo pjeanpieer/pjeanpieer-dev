@@ -57,7 +57,7 @@
   margin-right: auto;
 }
 
-.my-button {
+.btn-cv {
   background-color: #D9D9D9;
   color: #333;
   padding: 10px 20px;
@@ -66,21 +66,20 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
   cursor: pointer;
   transition: all 0.2s ease-in-out; /* Agrega esta propiedad para suavizar la transición */
 }
 
-.my-button:hover {
+.btn-cv:hover {
   background-color: #6BF178;
 }
 
-.my-button a {
+.btn-cv a {
   text-decoration: none;
   color:#333;
 }
 
-.my-button:hover a {
+.btn-cv:hover a {
   color: white;
 }
 
@@ -246,5 +245,36 @@
   .info-name {
     margin-top: 7px;
     margin-bottom: 7px;
+  }
+}
+
+.center-icon {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+}
+
+.about {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
+.about-title {
+  margin-bottom: 5%;
+}
+
+.about-text {
+  margin-bottom: 5%;
+}
+
+@media (max-width: 576px) {
+  .center-icon {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  .center-icon img {
+    max-width: 50%;
+    margin: 0 auto;
   }
 }

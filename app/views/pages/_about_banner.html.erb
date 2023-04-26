@@ -1,19 +1,21 @@
-<div class="container mt-5" id="about">
+<div class="container-fluid mt-5" id="about">
   <div class="row">
 
-    <div class="col-12 col-lg-4 text-center align-self-center">
+    <div class="col-12 col-sm-4 center-icon">
       <%= image_tag("dev-icon.png", class: "center-dev") %>
     </div>
 
-    <div class="col-12 col-lg-8">
-      <h2 style="margin-bottom: 5%;"><strong>About me</strong></h2>
-      <p>Developer with background in Business Administration, professional with solid knowledge of programming languages and frameworks.</p>
-      <p>Exceptional proficiency in creating optimal algorithms, ability to solve complex problems and debug code, with passion and motivation for web development and building high-quality digital solutions.</p>
-      <p>Organized, committed, and perseverant are three adjectives that describe me well.</p>
-      <div class="my-button">
+    <div class="col-12 col-sm-8 about">
+      <h2 class="about-title"><strong>About me</strong></h2>
+      <div class="about-text">
+        <p>Developer with background in Business Administration, professional with solid knowledge of programming languages and frameworks.</p>
+        <p>Exceptional proficiency in creating optimal algorithms, ability to solve complex problems and debug code, with passion and motivation for web development and building high-quality digital solutions.</p>
+        <p style="margin-bottom: 0px;">Organized, committed, and perseverant are three adjectives that describe me well.</p>
+      </div>
+      <div class="btn-cv">
         <strong><%= link_to "Download Resume", download_cv_path %></strong>
       </div>
     </div>
-
+    
   </div>
 </div>
