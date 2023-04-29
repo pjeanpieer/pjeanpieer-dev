@@ -123,7 +123,7 @@
   font-size: 12px;
 }
 
-.links a {
+.btn-line a {
   text-decoration: none;
   margin-top: auto;
   color: #333;
@@ -132,12 +132,12 @@
   padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
 }
 
-.links a span {
+.btn-line a span {
   display: inline-block;
   border-bottom: 2px solid transparent;
 }
 
-.links a:hover span {
+.btn-line a:hover span {
   border-bottom-color: #6BF178;
 }
 
