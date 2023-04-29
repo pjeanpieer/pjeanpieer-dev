@@ -17,15 +17,16 @@
    ]
 %>
 
-<div class="container mt-5 mb-5" id="skills">
-  <h2><strong>Skills</strong></h2>
-  <div class="row gap-2 mt-5 justify-content-center">
+<div class="container-fluid mt-5" id="skills">
+  <div class="header-title">
+    <h2><strong>Skills</strong></h2>
+    <div class="line-center"></div>
+  </div>
+  <div class="grid-tech mt-5 mb-5">
     <% technologies.each do |technology| %>
-      <div class="col-sm-3 col-md-2 px-0">
-        <div class="technology">
-          <%= image_tag(technology[:image], class: 'h-100') %>
-          <p><%= technology[:name] %></p>
-        </div>
+      <div class="technology">
+        <%= image_tag(technology[:image]) %>
+        <p><%= technology[:name] %></p>
       </div>
     <% end %>
   </div>
