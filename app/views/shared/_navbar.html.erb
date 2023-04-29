@@ -8,24 +8,24 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto links">
+      <ul class="navbar-nav me-auto">
+        <div class="d-flex flex-col gap-4">
           <li class="nav-item active">
-          <%= link_to "Home", root_path(anchor: "home"), class: "nav-link" %>
+            <%= link_to "Home", root_path(anchor: "home"), class: "nav-resp" %>
           </li>
           <li class="nav-item active">
-          <%= link_to "About me", root_path(anchor: "about"), class: "nav-link" %>
+            <%= link_to "About me", root_path(anchor: "about"), class: "nav-resp" %>
           </li>
           <li class="nav-item active">
-          <%= link_to "Portfolio", root_path(anchor: "portfolio"), class: "nav-link" %>
+            <%= link_to "Portfolio", root_path(anchor: "portfolio"), class: "nav-resp" %>
           </li>
           <li class="nav-item active">
-          <%= link_to "Skills", root_path(anchor: "skills"), class: "nav-link" %>
+            <%= link_to "Skills", root_path(anchor: "skills"), class: "nav-resp" %>
           </li>
           <li class="nav-item active">
-          <%= link_to "Contact", root_path(anchor: "contact"), class: "nav-link" %>
+            <%= link_to "Contact", root_path(anchor: "contact"), class: "nav-resp" %>
           </li>
-          <!--li class="nav-item"-->
-          <!--/li-->
+        </div>
       </ul>
     </div>
   </div>
