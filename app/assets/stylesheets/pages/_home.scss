@@ -1,5 +1,28 @@
-// Specific CSS for your home-page
+// home_banner
 
+@media(max-width: 576px) {
+  .responsive-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .responsive-layout .col-first {
+    order: 1;
+    text-align: center;
+  }
+
+  .responsive-layout .col-second {
+    order: 2;
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  .info-name {
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+}
 
 .horizontal-center {
   margin: auto;
@@ -58,6 +81,51 @@
   margin-right: auto;
 }
 
+// about_banner
+
+.margin-about {
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+}
+
+.center-icon {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+}
+
+@media (max-width: 576px) {
+  .center-icon {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  .center-icon img {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+}
+
+.center-dev {
+  display: block;
+  margin-right: auto;
+  max-width: 70%;
+  height: auto;
+}
+
+.about {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
+.about-title {
+  margin-bottom: 5%;
+}
+
+.about-text {
+  margin-bottom: 5%;
+}
+
 .btn-cv {
   background-color: #D9D9D9;
   color: #333;
@@ -68,7 +136,7 @@
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
-  transition: all 0.2s ease-in-out; /* Agrega esta propiedad para suavizar la transición */
+  transition: all 0.2s ease-in-out;
 }
 
 .btn-cv:hover {
@@ -84,12 +152,36 @@
   color: white;
 }
 
+// Portfolio_banner
 
-.center-dev {
-  display: block;
-  margin-right: auto;
-  max-width: 70%;
-  height: auto;
+.header-title {
+  display: flex;
+  align-items: center;
+}
+
+.line-center {
+  width: 100%;
+  height: 2px;
+  background-color: #6BF178;
+  margin-left: 20px;
+}
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+@media(max-width: 1025px) {
+  .grid-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width: 576px) {
+  .grid-cards {
+    grid-template-columns: 1fr;
+  }
 }
 
 .card {
@@ -112,6 +204,23 @@
 .card img {
   display: block;
   border-radius: 15px 15px 0 0;
+}
+
+@media (max-width: 576px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+  }
 }
 
 .tag-skills {
@@ -142,21 +251,23 @@
   border-bottom-color: #6BF178;
 }
 
-.grid-cards {
+// Skills_banner
+
+.grid-tech {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
 }
 
 @media(max-width: 1025px) {
-  .grid-cards {
-    grid-template-columns: 1fr 1fr;
+  .grid-tech {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
 @media(max-width: 576px) {
-  .grid-cards {
-    grid-template-columns: 1fr;
+  .grid-tech {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -178,43 +289,15 @@
   max-width: 40%;
 }
 
-.grid-tech {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 10px;
-}
-
-@media(max-width: 1025px) {
-  .grid-tech {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-}
-
-@media(max-width: 576px) {
-  .grid-tech {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
+// Contact_banner
 
 .email {
   text-decoration: none;
-  color: #000;
+  color: #333;
 }
 
 .email:hover {
-  color: #000;
-}
-
-.footer-align {
-  text-align: right;
-  background-color: #D9D9D9; /* establece el color de fondo del footer */
-  padding: 10px; /* agrega un relleno alrededor del contenido del footer */
-}
-
-.footer-align p {
-  font-size: 12px;
-  margin: 0; /* elimina el margen predeterminado del párrafo dentro del footer */
+  color: #333;
 }
 
 .banner-contact {
@@ -253,91 +336,15 @@
   padding: 80px;
 }
 
-@media(max-width: 576px) {
-  .responsive-layout {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  // Footer
 
-  .responsive-layout .col-first {
-    order: 1;
-    text-align: center;
-  }
-
-  .responsive-layout .col-second {
-    order: 2;
-    text-align: center;
-    margin-top: 3rem;
-  }
-
-  .info-name {
-    margin-top: 7px;
-    margin-bottom: 7px;
-  }
+.footer-align {
+  text-align: right;
+  background-color: #D9D9D9; /* establece el color de fondo del footer */
+  padding: 10px; /* agrega un relleno alrededor del contenido del footer */
 }
 
-.center-icon {
-  display: flex;
-  align-self: center;
-  flex-direction: column;
-}
-
-.about {
-  display: flex;
-  align-items: start;
-  flex-direction: column;
-}
-
-.about-title {
-  margin-bottom: 5%;
-}
-
-.about-text {
-  margin-bottom: 5%;
-}
-
-@media (max-width: 576px) {
-  .center-icon {
-    text-align: center;
-    margin-bottom: 4rem;
-  }
-  .center-icon img {
-    max-width: 50%;
-    margin: 0 auto;
-  }
-}
-
-.header-title {
-  display: flex;
-  align-items: center;
-}
-
-.line-center {
-  width: 100%;
-  height: 2px;
-  background-color: #6BF178;
-  margin-left: 20px;
-}
-
-@media (max-width: 576px) {
-  .card {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  .card {
-    display: flex;
-    flex-direction: column;
-    object-fit: cover;
-  }
-}
-
-.margin-about {
-  margin-top: 5rem;
-  margin-bottom: 7rem;
+.footer-align p {
+  font-size: 12px;
+  margin: 0; /* elimina el margen predeterminado del párrafo dentro del footer */
 }
