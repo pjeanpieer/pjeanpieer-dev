@@ -1,8 +1,6 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: transparent;
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -26,4 +24,25 @@
 .nav-resp:hover {
   border-bottom-color: #6BF178;
   color: #333;
+}
+
+
+.navbar-toggler{
+  border-color: transparent;
+  background-color: transparent;
+  font-size: xx-large;
+  flex-direction: column;
+}
+
+.navbar-responsive {
+  display: flex;
+  gap: 2rem;
+}
+
+@media(max-width: 576px) {
+  .navbar-responsive{
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+  }
 }
