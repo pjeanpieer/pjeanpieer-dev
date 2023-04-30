@@ -184,6 +184,12 @@
   grid-gap: 10px;
 }
 
+@media(max-width: 1025px) {
+  .grid-tech {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
 @media(max-width: 576px) {
   .grid-tech {
     grid-template-columns: 1fr 1fr 1fr;
@@ -262,7 +268,7 @@
   .responsive-layout .col-second {
     order: 2;
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 3rem;
   }
 
   .info-name {
