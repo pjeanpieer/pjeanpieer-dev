@@ -1,5 +1,11 @@
 // home_banner
 
+.responsive-layout {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
 @media(max-width: 576px) {
   .responsive-layout {
     display: flex;
@@ -23,6 +29,26 @@
     margin-top: 7px;
     margin-bottom: 7px;
   }
+
+  #responsive-title {
+    margin-bottom: 0;
+    font-size: 32px;
+  }
+
+  #responsive-prof {
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+}
+
+
+.info-name h1 {
+  margin-bottom: 0;
+  font-size: 70px;
+}
+
+.info-name h4 {
+  margin-bottom: 0;
 }
 
 .horizontal-center {
@@ -37,13 +63,14 @@
   width: 70px;
   height: 35px;
   background-color: #6BF178;
-  color: #333;
+  color: #ffffff;
   border-radius: 15px 15px 15px 0;
   font-size: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 3%;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
 .all-social {
@@ -142,6 +169,7 @@
 
 .btn-cv:hover {
   background-color: #6BF178;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
 .btn-cv a {
@@ -232,6 +260,7 @@
   text-align: center;
   display: inline-block;
   font-size: 12px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
 .btn-line a {

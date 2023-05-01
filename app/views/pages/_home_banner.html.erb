@@ -30,14 +30,14 @@
         <strong>Hi, It's</strong>
       </div>
       <div class="info-name">
-        <h1 style="margin-bottom: 0px;"><strong>Jean Pieer</strong></h1>
-        <h4 style="margin-bottom: 0px;">Full - Stack Developer</h4>
+        <h1 id="responsive-title"><strong>Jean Pieer</strong></h1>
+        <h4 id="responsive-prof">Full - Stack Developer</h4>
       </div>
       <div class="all-social">
         <% my_social_medias.each do |link| %>
           <a class="one-social-media" href="<%= link[:url] %>" target="_blank">
             <span class="circle">
-              <i class="<%= link[:icon_class] %>"></i>
+              <i class="<%= link[:icon_class] %>" style="color: black;"></i>
             </span>
           </a>
         <% end %>
