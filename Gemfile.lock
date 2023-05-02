@@ -150,9 +150,7 @@ GEM
       racc (~> 1.4)
     nokogiri (1.14.3-x86_64-linux)
       racc (~> 1.4)
-    octokit (6.1.1)
-      faraday (>= 1, < 3)
-      sawyer (~> 0.9)
+
     pg (1.4.6)
     public_suffix (5.0.1)
     puma (5.6.5)
@@ -257,7 +255,6 @@ DEPENDENCIES
   font-awesome-sass (~> 6.1)
   jbuilder
   jsbundling-rails
-  octokit
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.3)
