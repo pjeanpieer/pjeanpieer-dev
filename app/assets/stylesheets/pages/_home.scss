@@ -272,12 +272,14 @@
   padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
 }
 
-.btn-line a span {
-  display: inline-block;
+#links-out {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
   border-bottom: 2px solid transparent;
 }
 
-.btn-line a:hover span {
+#links-out:hover {
   border-bottom-color: #6BF178;
 }
 
