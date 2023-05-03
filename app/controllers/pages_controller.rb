@@ -3,6 +3,6 @@ class PagesController < ApplicationController
   end
 
   def download_cv
-    send_file "#{Rails.root}/public/docs/Full-stack.pdf", type: "application/pdf", x_sendfile: true
+    send_file "#{Rails.root}/public/docs/Full-stack.pdf", type: "application/pdf", disposition: 'attachment'
   end
 end
